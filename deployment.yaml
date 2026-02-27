@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: service-b
-        image: azimulayaz/service-b:latest # Ye line GitHub Action badal dega
+        image: azimulayaz/service-b:v1 # GitHub Action ise update karega
         ports:
         - containerPort: 8081
