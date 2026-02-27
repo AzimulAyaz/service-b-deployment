@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-b-service
+  namespace: perennial
+spec:
+  selector:
+    app: service-b # Ye wahi label hai jo deployment mein tha
+  ports:
+    - protocol: TCP
+      port: 8081       # Cluster internal port
+      targetPort: 8081 # Application port
+  type: NodePort       # Taaki hum laptop se bhi test kar sakein
